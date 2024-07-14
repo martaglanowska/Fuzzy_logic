@@ -2,7 +2,7 @@
 
 Fuzzy logic allows for intermediate values ​​between 0 and 1, unlike classical logic, which classifies values ​​as absolute true or false. In fuzzy logic, a value is expressed by belonging, usually to several sets, to a certain degree. Fuzzy systems are based on this approach and are therefore closer to the natural representation of everyday situations.
 
-Main components of fuzzy system are:
+Main components of the fuzzy system are:
 1. linguistic variables - input and output variables, which values ​​are expressed in words,
 2. membership functions - with a domain ​​\[0,1\], defined for each linguistic term of a given variable,
 3. rules - each consisting of a preceding part (IF) and a subsequent part (THEN), defining the natural relationships that occur between variables.
