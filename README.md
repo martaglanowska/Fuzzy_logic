@@ -10,7 +10,7 @@ Main components of the fuzzy system are:
 ## Implementations
 
 This repository contains two approaches to implementing a fuzzy system:
- * **use of a dedicated [scikit-fuzzy](https://pythonhosted.org/scikit-fuzzy/userguide/getting_started.html) library**, which conveniently allows the user to define and run such a system (*Using_skfuzzy_module* directory) - presented on the example of estimating the initial velocity of a oblique throw without and with air resistance
+ * **using a dedicated [scikit-fuzzy](https://pythonhosted.org/scikit-fuzzy/userguide/getting_started.html) library**, which conveniently allows the user to define and run such a system (*Using_skfuzzy_module* directory) - presented on the example of estimating the initial velocity of a oblique throw without and with air resistance
  * **implementation from scratch**, which undoubtedly gives more freedom in creating a fuzzy system (*From_scratch* directory) - presented on a standard example of estimating the tip amount based on the evaluation of food and service in a restaurant
 
 ## Modules
