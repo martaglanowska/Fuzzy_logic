@@ -27,6 +27,7 @@ def main():
     tip.add_constant("big", 15)
     print("\nTip:\t", tip.get_sets(), "\n")
 
+    print("\n-----RULES-----\n")
     #rule definitions
     R1 = Rule([(food, "poor"), (service, "poor")], ['AND'], (tip, "small"))
     R2 = Rule([(food, "medium"), (service, "medium"), (food, "good"), (service, "poor"), (food, "poor"), (service, "good")], ['OR','OR','AND', 'OR', 'AND'], (tip, "medium"))
