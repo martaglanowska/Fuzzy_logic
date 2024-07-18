@@ -27,6 +27,7 @@ The next step is to define the relationships between variables using rules. In t
 - antecedents list of any length
 - logical operators list shorter by one element than antecedents list: AND(minimum)/OR(maximum)
 - consequent
+
 The calculation of the rule activation level will be performed in accordance with the usual order of logical operations.
 
 ![image](https://github.com/user-attachments/assets/6c093372-c7c3-43ef-8af3-b986cf09590a)
