@@ -18,7 +18,7 @@ def main():
     service.trapezoidal("poor", 0, 0, 2, 4)
     service.triangular("medium", 3, 5, 7)
     service.trapezoidal("good", 6, 8, 10, 10)
-    print("\nService:   ", service.get_sets())
+    print("Service:   ", service.get_sets())
 
     print("\n-----OUTPUT VARIABLE VALUES-----")
     #tip - constants
