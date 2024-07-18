@@ -19,7 +19,7 @@ Presented on the example of estimating the initial velocity of a oblique throw w
 ### Implementation from scratch
 Presented on a standard example of estimating the tip amount based on the evaluation of food and service in a restaurant.
 
-In **main.py** we define input variables (food, service), the allowable range of their values and output variable (tip). Then we define trapezoids and triangles for each input variable - note, that values ​​must be within the previously defined ranges. We define a constant for each linguistic value of the output variable.
+In *main.py* we define input variables (food, service), the allowable range of their values and output variable (tip). Then we define trapezoids and triangles for each input variable - note, that values ​​must be within the previously defined ranges. We define a constant for each linguistic value of the output variable.
 
 ![image](https://github.com/user-attachments/assets/fdf68e15-d9b4-495d-8096-b4a699e7b8c2)
 
