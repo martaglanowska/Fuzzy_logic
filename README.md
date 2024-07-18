@@ -21,7 +21,7 @@ Presented on a standard example of estimating the tip amount based on the evalua
 
 In **main.py** we define input variables (food, service), the allowable range of their values and output variable (tip). Then we define trapezoids and triangles for each input variable - note, that values ​​must be within the previously defined ranges. We define a constant for each linguistic value of the output variable.
 
-![image](https://github.com/user-attachments/assets/72f73338-ccb3-4f80-b979-b3b9d0dc4aa2)
+![image](https://github.com/user-attachments/assets/c95a14fe-29e3-4791-ae30-e464695d16e3)
 
 The next step is to define the relationships between variables using rules. In this case we specify:
 - antecedents list of any length
@@ -33,8 +33,7 @@ The calculation of the rule activation level will be performed in accordance wit
 
 Then we initialize the fuzzy system, provide the values ​​of the input variables and get the suggested tip amount after running the file. The inference process is based on **fuzzification** (determining the degree to which the given values ​​belong to individual sets) and on the application of the **system rules**.
 
-![image](https://github.com/user-attachments/assets/c34f8581-e6e8-4c7f-a8c4-18f7b7f70670)
-
+![image](https://github.com/user-attachments/assets/6e3901b5-6ceb-472c-853b-4957431a387a)
 
 ## Modules
 The code was created in Python 3.11.0.
