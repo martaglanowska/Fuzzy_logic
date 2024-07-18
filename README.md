@@ -21,7 +21,7 @@ Presented on a standard example of estimating the tip amount based on the evalua
 
 In **main.py** we define input variables (food, service), the allowable range of their values and output variable (tip). Then we define trapezoids and triangles for each input variable - note, that values ​​must be within the previously defined ranges. We define a constant for each linguistic value of the output variable.
 
-![image](https://github.com/user-attachments/assets/c95a14fe-29e3-4791-ae30-e464695d16e3)
+![image](https://github.com/user-attachments/assets/fdf68e15-d9b4-495d-8096-b4a699e7b8c2)
 
 The next step is to define the relationships between variables using rules. In this case we specify:
 - antecedents list of any length
