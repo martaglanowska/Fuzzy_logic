@@ -10,11 +10,8 @@ Main components of the fuzzy system are:
 ## Implementations
 
 This repository contains two approaches to implementing a fuzzy system:
- * **using a dedicated [scikit-fuzzy](https://pythonhosted.org/scikit-fuzzy/userguide/getting_started.html) library**, which conveniently allows the user to define and run such a system (*Using_skfuzzy_module* directory)
  * **implementation from scratch** revealing the mechanisms operating inside the system (*From_scratch* directory)
-
-### Using a dedicated library
-Presented on the example of estimating the initial velocity of a oblique throw without and with air resistance.
+ * **using a dedicated [scikit-fuzzy](https://pythonhosted.org/scikit-fuzzy/userguide/getting_started.html) library**, which conveniently allows the user to define and run such a system (*Using_skfuzzy_module* directory)
 
 ### Implementation from scratch
 Presented on a standard example of estimating the tip amount based on the evaluation of food and service in a restaurant.
@@ -35,6 +32,28 @@ The calculation of the rule activation level will be performed in accordance wit
 Then we initialize the fuzzy system, provide the values ​​of the input variables and get the suggested tip amount after running the file. The inference process is based on **fuzzification** (determining the degree to which the given values ​​belong to individual sets) and on the application of the **system rules**.
 
 ![image](https://github.com/user-attachments/assets/6e3901b5-6ceb-472c-853b-4957431a387a)
+
+### Using a dedicated library
+Presented on the example of estimating the initial velocity of a oblique throw without and with air resistance.
+
+A) no air resistance
+
+Input variables: throw distance in meters (d) and throw angle in degrees (angle)
+Output variable: inicial velocity in meters per second (v0)
+
+Rules defined:
+- If d is *small* OR d is *medium* AND angle is *optimum*  **then** v0 is *slow*.
+- If d is *small* AND angle is *bad* OR d is *medium* OR d is *big* AND angle is *optimum*  **then** v0 is *moderate*.
+- If d is *medium* AND angle is *bad* OR d is *big* **then** v0 is fast.
+
+The system responses were compared with the results from the physical formula: $`v0=\sqrt{d/\sin{2*angle}*g}`$, where $`g=10m/s^2`$.
+
+Test simulation for ​​d=12 and angle=30.
+![A_estimated_value](https://github.com/user-attachments/assets/09669cc6-9216-42f2-8361-86f84dc1c95f)
+![image](https://github.com/user-attachments/assets/a8a40033-baf9-441f-ad20-3476c86a3c3d)
+
+Comparison of estimated and actual responses for different distances d.
+![A_estimation_reality](https://github.com/user-attachments/assets/43902800-5a9b-45f7-a5c7-87d784bb3a2a)
 
 ## Modules
 The code was created in Python 3.11.0.
