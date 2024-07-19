@@ -47,15 +47,13 @@ Rules defined:
 - If d is *medium* AND angle is *bad* OR d is *big* **then** v0 is fast.
 
 Test simulation for ​​d=12 and angle=30.
+<img src="https://github.com/user-attachments/assets/4e93bad3-3f5b-4ebb-a34c-2498a5c6387c" width="320" height="240">
 
-![A_estimated_value](https://github.com/user-attachments/assets/09669cc6-9216-42f2-8361-86f84dc1c95f =320x240)
-
-The system responses were compared with the results from the physical formula: $`v0=\sqrt{d/\sin{2*angle}*g}`$, where $`g=10m/s^2`$.
+The system responses were compared with the results from the physical formula: $`v0=\sqrt{(d/\sin(2*angle))*g}`$, where $`g=10m/s^2`$.
 ![image](https://github.com/user-attachments/assets/43628d41-8d9c-41f1-87d4-63d64c234da8)
 
 Comparison of estimated and actual responses for different distances d.
-
-![A_estimation_reality](https://github.com/user-attachments/assets/43902800-5a9b-45f7-a5c7-87d784bb3a2a =320x240)
+<img src="https://github.com/user-attachments/assets/43902800-5a9b-45f7-a5c7-87d784bb3a2a" width="320" height="240">
 
 ## Modules
 The code was created in Python 3.11.0.
