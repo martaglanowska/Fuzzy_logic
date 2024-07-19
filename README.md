@@ -49,15 +49,56 @@ Rules defined:
 
 Test simulation for ​​d=12 and angle=30.
 
+<p align="center" width="100%">
 <img src="https://github.com/user-attachments/assets/4e93bad3-3f5b-4ebb-a34c-2498a5c6387c" width="480" height="360">
+</p>
 
-The system responses were compared with the results from the physical formula: $`v0=\sqrt{(d/\sin(2*angle))*g}`$, where $`g=10m/s^2`$.
+The system responses were compared with the results from the physical formula: $`v0=\sqrt{(d/\sin(2*angle\_rad))*g}`$, where $`g=10m/s^2`$.
 
 ![image](https://github.com/user-attachments/assets/cd5b1c15-992e-4eac-9817-08299fbfa293)
 
 Comparison of estimated and actual responses for different distances d.
 
+<p align="center" width="100%">
 <img src="https://github.com/user-attachments/assets/43902800-5a9b-45f7-a5c7-87d784bb3a2a" width="480" height="360">
+</p>
+
+b) **with air resistance**
+
+Input variables: throw distance in meters (d), throw angle in degrees (angle), air resistance coefficient (k), body mass in kilograms (m)
+
+Output variable: inicial velocity in meters per second (v0)
+
+Rules defined:
+- If d is *small* **then** v0 is *slow*.
+- If d is *medium* **then** v0 is *moderate*.
+- If d is *big* **then** v0 is *fast*.
+
+
+- If k is *big* and m is *small* **then** v0 is *fast*.
+- If k is *big* and m is *medium* **then** v0 is *moderate*.
+- Otherwise v0 is *slow*.
+
+
+- If m is *small* AND angle is *optimum* **then** v0 is *fast*.
+- If m is *small* AND angle is *bad* OR m is *medium* AND angle is *bad* **then** v0 is *fast*.
+- If m is *medium* AND angle is *optimum* **then** v0 is *moderate*.
+- If m is *big* **then** v0 is *slow*.
+
+
+- If angle is *optimum* **then** v0 is *slow*.
+- If angle is *bad* **then** v0 is *fast*.
+
+The system responses were compared with the results from the physical formula: $`v0=(d*k)/(m*\sin(2*angle\_rad))*\exp(-2*\sin(angle\_rad)))`$.
+
+|                                                                                       |                                                                                       |
+|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
+| <img width="100%" src="https://github.com/user-attachments/assets/e94ee0ee-62b5-429b-a69e-16a1bfb39ea7"> | <img width="100%" src="https://github.com/user-attachments/assets/059a0172-f6d7-4ab1-ae69-bb382e0cb3dc"> |
+| <img width="100%" src="https://github.com/user-attachments/assets/4e8f8633-1546-4a81-accb-66a42013be40"> | <img width="100%" src="https://github.com/user-attachments/assets/6f984515-29f6-4018-ba02-875023acb61c"> |
+
+**Conclusions**
+
+The more input variables, the more difficult it may be to create an effective fuzzy system. The above system reflects the effect of distance on velocity estimation quite well, it also tries to reflect the shape of the real graph for the throw angle, but the challenge is to define the dependencies for the k and m variables. Therefore, when creating fuzzy systems, expert knowledge is used to define the ranges of variables and rules governing a given phenomenon.
 
 ## Modules
 The code was created in Python 3.11.0.
@@ -65,7 +106,5 @@ The code was created in Python 3.11.0.
 - [scikit-fuzzy 0.4.2](https://pythonhosted.org/scikit-fuzzy/userguide/getting_started.html)
 - [matplotlib 3.6.1](https://matplotlib.org/3.5.3/api/_as_gen/matplotlib.pyplot.html)
 - [math](https://docs.python.org/3/library/math.html)
-
-
 
 
