@@ -73,19 +73,13 @@ Rules defined:
 - If d is *small* **then** v0 is *slow*.
 - If d is *medium* **then** v0 is *moderate*.
 - If d is *big* **then** v0 is *fast*.
-
-
 - If k is *big* and m is *small* **then** v0 is *fast*.
 - If k is *big* and m is *medium* **then** v0 is *moderate*.
-- Otherwise v0 is *slow*.
-
-
+- Tf there is another variation of k and m **then** v0 is *slow*.
 - If m is *small* AND angle is *optimum* **then** v0 is *fast*.
 - If m is *small* AND angle is *bad* OR m is *medium* AND angle is *bad* **then** v0 is *fast*.
 - If m is *medium* AND angle is *optimum* **then** v0 is *moderate*.
 - If m is *big* **then** v0 is *slow*.
-
-
 - If angle is *optimum* **then** v0 is *slow*.
 - If angle is *bad* **then** v0 is *fast*.
 
