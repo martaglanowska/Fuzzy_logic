@@ -36,7 +36,7 @@ Then we initialize the fuzzy system, provide the values ​​of the input varia
 ### Using a dedicated library
 Presented on the example of estimating the initial velocity of a oblique throw without and with air resistance.
 
-A) no air resistance
+a) **no air resistance**
 
 Input variables: throw distance in meters (d) and throw angle in degrees (angle)
 Output variable: inicial velocity in meters per second (v0)
@@ -46,14 +46,16 @@ Rules defined:
 - If d is *small* AND angle is *bad* OR d is *medium* OR d is *big* AND angle is *optimum*  **then** v0 is *moderate*.
 - If d is *medium* AND angle is *bad* OR d is *big* **then** v0 is fast.
 
-The system responses were compared with the results from the physical formula: $`v0=\sqrt{d/\sin{2*angle}*g}`$, where $`g=10m/s^2`$.
-
 Test simulation for ​​d=12 and angle=30.
-![A_estimated_value](https://github.com/user-attachments/assets/09669cc6-9216-42f2-8361-86f84dc1c95f)
-![image](https://github.com/user-attachments/assets/a8a40033-baf9-441f-ad20-3476c86a3c3d)
+
+![A_estimated_value](https://github.com/user-attachments/assets/09669cc6-9216-42f2-8361-86f84dc1c95f =320x240)
+
+The system responses were compared with the results from the physical formula: $`v0=\sqrt{d/\sin{2*angle}*g}`$, where $`g=10m/s^2`$.
+![image](https://github.com/user-attachments/assets/43628d41-8d9c-41f1-87d4-63d64c234da8)
 
 Comparison of estimated and actual responses for different distances d.
-![A_estimation_reality](https://github.com/user-attachments/assets/43902800-5a9b-45f7-a5c7-87d784bb3a2a)
+
+![A_estimation_reality](https://github.com/user-attachments/assets/43902800-5a9b-45f7-a5c7-87d784bb3a2a =320x240)
 
 ## Modules
 The code was created in Python 3.11.0.
